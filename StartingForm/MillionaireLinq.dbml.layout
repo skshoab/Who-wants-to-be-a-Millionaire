@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.375" name="MillionaireLinq">
+  <DataContextMoniker Name="/MillionaireLinqDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f96fa161-f576-4c34-917b-993dcaac474a" absoluteBounds="1.375, 2.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/MillionaireLinqDataContext/Question" />
+      <nestedChildShapes>
+        <elementListCompartment Id="006ddf60-c26e-4531-8bf8-440b43eb5bfa" absoluteBounds="1.3900000000000001, 3.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f424a785-b6f0-4377-a6e6-09e4ba4a9cd0" absoluteBounds="5.75, 2.25, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/MillionaireLinqDataContext/A1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4265effc-b844-468b-ba60-894302090041" absoluteBounds="5.7650000000000006, 2.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 3.15949625651042); (3.375 : 3.15949625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MillionaireLinqDataContext/A1/A1_Question" />
+      <nodes>
+        <classShapeMoniker Id="f424a785-b6f0-4377-a6e6-09e4ba4a9cd0" />
+        <classShapeMoniker Id="f96fa161-f576-4c34-917b-993dcaac474a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c0b546ca-7f73-4399-a4a8-5261e89be2d3" absoluteBounds="5.75, 6.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/MillionaireLinqDataContext/A4" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c3ccbce6-89dd-4302-b2fa-316e09731618" absoluteBounds="5.765, 6.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 7.09699625651042); (2.9062525 : 7.09699625651042); (2.9062525 : 4.06899251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MillionaireLinqDataContext/A4/A4_Question" />
+      <nodes>
+        <classShapeMoniker Id="c0b546ca-7f73-4399-a4a8-5261e89be2d3" />
+        <classShapeMoniker Id="f96fa161-f576-4c34-917b-993dcaac474a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f3a09cf3-3b0b-4904-8841-57e132b448bb" absoluteBounds="5.75, 7.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/MillionaireLinqDataContext/RA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="609ea322-c39a-4339-a42f-9c240adf24de" absoluteBounds="5.7650000000000006, 8.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 8.47199625651042); (2.375 : 8.47199625651042); (2.375 : 4.06899251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MillionaireLinqDataContext/RA/RA_Question" />
+      <nodes>
+        <classShapeMoniker Id="f3a09cf3-3b0b-4904-8841-57e132b448bb" />
+        <classShapeMoniker Id="f96fa161-f576-4c34-917b-993dcaac474a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ac05372c-a036-443f-9f0e-2bb9dec14165" absoluteBounds="5.75, 3.625, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/MillionaireLinqDataContext/A2" />
+      <nestedChildShapes>
+        <elementListCompartment Id="333de3b7-df22-4356-8c1c-b7113a1daf0a" absoluteBounds="5.765, 4.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 3.84699625651042); (5.61458333333333 : 3.84699625651042 : JumpStart); (5.44791666666667 : 3.84699625651042 : JumpEnd); (3.375 : 3.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MillionaireLinqDataContext/A2/A2_Question" />
+      <nodes>
+        <classShapeMoniker Id="ac05372c-a036-443f-9f0e-2bb9dec14165" />
+        <classShapeMoniker Id="f96fa161-f576-4c34-917b-993dcaac474a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="65a9946a-2bb7-4d03-889d-c1851213d6d9" absoluteBounds="5.375, 5.125, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/MillionaireLinqDataContext/A3" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb4b0636-93d4-4080-8452-034810bc1f95" absoluteBounds="5.39, 5.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.53125 : 5.125); (5.53125 : 3.53449625651042); (3.375 : 3.53449625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MillionaireLinqDataContext/A3/A3_Question" />
+      <nodes>
+        <classShapeMoniker Id="65a9946a-2bb7-4d03-889d-c1851213d6d9" />
+        <classShapeMoniker Id="f96fa161-f576-4c34-917b-993dcaac474a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

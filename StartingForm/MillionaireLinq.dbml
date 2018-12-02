@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MillionaireDB" Class="MillionaireLinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\MillionaireDB.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="StartingForm.Properties.Settings" SettingsPropertyName="MillionaireDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Question" Member="Questions">
+    <Type Name="Question">
+      <Column Name="QNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="QLine" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="A1_Question" Member="A1" ThisKey="QNo" OtherKey="A1No" Type="A1" IsForeignKey="true" />
+      <Association Name="A4_Question" Member="A4" ThisKey="QNo" OtherKey="A4No" Type="A4" IsForeignKey="true" />
+      <Association Name="RA_Question" Member="RA" ThisKey="QNo" OtherKey="ANo" Type="RA" IsForeignKey="true" />
+      <Association Name="A2_Question" Member="A2" ThisKey="QNo" OtherKey="A2No" Type="A2" IsForeignKey="true" />
+      <Association Name="A3_Question" Member="A3" ThisKey="QNo" OtherKey="A3No" Type="A3" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.A1" Member="A1s">
+    <Type Name="A1">
+      <Column Name="A1No" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="A" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="A1_Question" Member="Question" ThisKey="A1No" OtherKey="QNo" Type="Question" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.A4" Member="A4s">
+    <Type Name="A4">
+      <Column Name="A4No" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="A" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="A4_Question" Member="Question" ThisKey="A4No" OtherKey="QNo" Type="Question" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RA" Member="RAs">
+    <Type Name="RA">
+      <Column Name="ANo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RA" Member="RA1" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="RA_Question" Member="Question" ThisKey="ANo" OtherKey="QNo" Type="Question" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.A2" Member="A2s">
+    <Type Name="A2">
+      <Column Name="A2No" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="A" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="A2_Question" Member="Question" ThisKey="A2No" OtherKey="QNo" Type="Question" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.A3" Member="A3s">
+    <Type Name="A3">
+      <Column Name="A3No" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="A" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="A3_Question" Member="Question" ThisKey="A3No" OtherKey="QNo" Type="Question" Cardinality="One" />
+    </Type>
+  </Table>
+</Database>

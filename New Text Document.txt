@@ -1,0 +1,13 @@
+CONSTRAINT [FK_Question_Answer] FOREIGN KEY ([QNo]) REFERENCES [dbo].[Answer] ([ANo])
+
+1	Kazi Nazrul Islam	Begum Sufia Kamal	Rabindranath Tagore	Golam Mustafa	Rabindranath Tagore
+2	Abdul Zabbar	Zainal Abedin	Abdul Alim	Shah Alam	Zainal Abedin
+3	16	39	51	31	51
+4	January 1, 1990	January 1, 1991	January 1, 1992	January 1, 1993	January 1, 1992
+5	Dhaka	Rajshashi	Chittagong	Khulna	Chittagong
+6	3	4	5	6	3
+7	UNICEF	OIC	UNESCO	CARE	UNICEF
+8	60	62	64	53	53
+9	60.13%	62.10%	62.66%	66.00%	62.66%
+10	November 15, 2007	November 19, 2007	November 25, 2007	November 13, 2007	November 15, 2007
+
